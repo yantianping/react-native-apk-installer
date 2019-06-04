@@ -8,9 +8,14 @@ import com.facebook.react.bridge.ReactMethod;
 
 import java.util.HashMap;
 import java.util.Map;
-
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.FileProvider;
+import android.util.Log;
 import java.io.File;
 
 public class ApkInstallerModule extends ReactContextBaseJavaModule {
